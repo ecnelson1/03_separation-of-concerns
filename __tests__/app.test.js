@@ -27,7 +27,7 @@ describe('createOrder route', () => {
   });
 });
 
-describe('getOrders route', () =>{
+describe('getOrders route', () => {
   it('returns all the orders in the database', () => {
     return request(app)
       .get('/api/v1/orders')
@@ -40,7 +40,7 @@ describe('getOrders route', () =>{
   });
 });
 
-describe('getOrderById route', () =>{
+describe('getOrderById route', () => {
   it('returns all the orders in the database for the given Id', () => {
     return request(app)
       .get('/api/v1/orders/1')
@@ -67,7 +67,7 @@ describe('updateOrder route', () => {
   });
 });
 
-describe(' deleteOrderById route', () =>{
+describe(' deleteOrderById route', () => {
   it('deletes the order in the database for the given Id', () => {
     return request(app)
       .delete('/api/v1/orders/1')
